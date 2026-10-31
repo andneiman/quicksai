@@ -196,7 +196,7 @@ h3 {
 }
 
 .hero-card p { color: var(--ink-70); max-width: 420px; }
-.hero-card .btn { margin-top: 10px; }
+.hero-card .btn { margin-top: auto; }
 
 .hero-card-art {
   width: 100%;
