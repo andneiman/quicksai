@@ -715,3 +715,91 @@ h3 {
   .legal .toc { padding: 18px 18px; }
   .legal .toc ol { columns: 1; }
 }
+
+/* ============================================================
+   Hero subhead
+   ============================================================ */
+.subhead {
+  margin: 16px 0 0;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--blue);
+  letter-spacing: -0.01em;
+}
+.subhead + .lead { margin-top: 12px; }
+
+/* ============================================================
+   K-12 subjects card (block 3 visual)
+   ============================================================ */
+.subjects-card {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 64px rgba(38, 38, 38, 0.12);
+  padding: 28px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.subjects-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.subjects-card-title { font-size: 18px; font-weight: 600; }
+
+.subjects-card-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--blue);
+  background: var(--blue-soft);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.subject-chip {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+
+.subject-chip b { font-size: 14px; font-weight: 600; color: var(--ink); }
+.subject-chip small { font-size: 11.5px; color: var(--ink-60); line-height: 1.35; }
+
+.subject-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.sm-math { background: linear-gradient(160deg, #ffe29a, #f5b942); color: #7a4e00; }
+.sm-ela  { background: linear-gradient(160deg, #9f7bec, #7048c9); }
+.sm-sci  { background: linear-gradient(160deg, #7fe3a1, #3cba6f); }
+.sm-soc  { background: linear-gradient(160deg, #f79ba2, #e05c68); }
+.sm-ai   { background: linear-gradient(160deg, #8ecdf2, #4b93d1); }
+.sm-life { background: linear-gradient(160deg, #f6b26b, #e8833a); }
+
+@media (max-width: 520px) {
+  .subjects-card { padding: 20px; }
+  .subjects-grid { grid-template-columns: 1fr; }
+}
