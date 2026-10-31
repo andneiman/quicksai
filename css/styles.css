@@ -143,6 +143,14 @@ h3 {
   transform: rotate(14deg);
 }
 
+.deco-scribble {
+  position: absolute;
+  width: 76px;
+  top: -34px;
+  right: 7%;
+  transform: rotate(-8deg);
+}
+
 .h2-wrap { position: relative; }
 
 /* burst peeks out from behind the doc mockup */
@@ -603,6 +611,7 @@ h3 {
   .split-reverse .split-visual { order: 2; }
 
   .deco-asterisk { width: 48px; top: -34px; right: 2%; }
+  .deco-scribble { width: 56px; top: -40px; right: 2%; }
   .split-visual-doc .deco-burst { width: 52px; top: -24px; right: 4%; }
 
   .testimonials { grid-template-columns: 1fr; }
